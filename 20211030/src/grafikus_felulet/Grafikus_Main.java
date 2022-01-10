@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package masodfoku_egyenlet_hiba_kezeles;
+package grafikus_felulet;
 
 /**
  *
  * @author ricsi
  */
-public class main {
+public class Grafikus_Main {
     public static void main(String[] args) {
-        Sor proba = new Sor(1,-5, 1);
-        System.out.println(proba.getZerushely());
-        
+        //new Frame1();
+        //new Frame2();
+        new Frame3();
+        // van mainja new Frame4();
+        //new Frame5();
     }
-    
+
+   
 }
-
-

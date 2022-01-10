@@ -53,10 +53,7 @@ public class mainHaromszog {
                         //System.out.println("Nem jött létre");
                     }
                     
-                }
-                   
-               
-               
+                } 
             } catch (FileNotFoundException ex){
                 System.out.println("FileNotFound");         
             } catch (IOException ex){

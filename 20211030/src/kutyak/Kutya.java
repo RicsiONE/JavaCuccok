@@ -4,7 +4,7 @@ package kutyak;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Kutya  {
+public class Kutya implements Comparable<Kutya> {
     private String nev;
     private int kor;
     protected static final String [] NEVEK = new String[] {"Bodri", "Buksi", "Cézár"};
@@ -80,6 +80,11 @@ public class Kutya  {
 //           return 0;
 //       }
 //    }
+
+    @Override
+    public int compareTo(Kutya o) {
+        return  o.getKor() - this.getKor();
+    }
     
 	
 }

@@ -22,7 +22,7 @@ public class Sor {
         b = b_;
         a = a_;
         if (a_ == 0) {
-            throw new MasodfokuHibaKezeles("nem méásodfokú egyenlet");
+            throw new MasodfokuHibaKezeles("nem másodfokú egyenlet");
         }
         c = c_;
         x = new double[2];  //megoldások helye
@@ -38,9 +38,11 @@ public class Sor {
             x[0] = (-b + Math.sqrt(diszkr)) / (2.0 * a);
             x[1] = (-b - Math.sqrt(diszkr)) / (2.0 * a);
             eredmeny = "x1 = " + x[0] + " ; x2 = " + x[1];
+            System.out.println(eredmeny);
         } else if (diszkr == 0) {
             x[0] = (-b / 2 * a);
             eredmeny = "x = " + x[0];
+            System.out.println(eredmeny);
         } else {
             throw new MasodfokuHibaKezeles("Nincs valós megoldás!");
             //eredmeny = "Nincs valós megoldás!";

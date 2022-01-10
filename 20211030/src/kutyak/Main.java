@@ -70,9 +70,9 @@ public class Main {
         // Dogok.sort(Comparator.comparing(Kutya::getKor));
         
         // visszafelé listázva getKor alapján
-        Dogok.sort(Comparator.comparing(Kutya::getKor).reversed());
+//      Dogok.sort(Comparator.comparing(Kutya::getKor).reversed());
+        Collections.sort(Dogok);
         System.out.println(Dogok);
-        
 //        Collections.sort(Dogok, new Comparator<Kutya>() {
 //            @Override
 //            public int compare(Kutya p1, Kutya p2) {
